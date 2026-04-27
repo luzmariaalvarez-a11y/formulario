@@ -17,7 +17,7 @@ $result = $conn->query("SELECT * FROM videojuegos");
 <?php while($row = $result->fetch_assoc()): ?>
     <?= $row['nombre'] ?> - <?= $row['plataforma'] ?> - <?= $row['precio'] ?>
 
-    <a href="borrar.php?id=<?= $row['id'] ?>">Borarr</a>
+    <a href="borrar.php?id=<?= $row['id'] ?>">Borrar</a>
     <a href="editar.php?id=<?= $row['id'] ?>">Editar</a>
     <br>
 <?php endwhile; ?>
